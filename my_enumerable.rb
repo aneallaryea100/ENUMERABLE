@@ -15,10 +15,11 @@ module MyEnumerable
         result 
     end
 
-    def filter?
+    def filter
         result = []
         each do |element|
             result.push(element) if yield element
         end
         result
-    end 
+    end
+end 
